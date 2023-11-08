@@ -1,5 +1,5 @@
 import BreadCrumb from "@/components/breadcrumb/Breadcrumb";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import BlogImage1 from '../../assets/images/blog/1.png'
 

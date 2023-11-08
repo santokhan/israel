@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="w-full max-w-screen-xl mx-auto px-4 flex flex-wrap lg:flex-nowrap justify-between gap-6 lg:gap-12">
                 <div className="w-full lg:w-4/12 xl:w-3/12 flex flex-wrap gap-8 order-2 lg:order-1">
                     {Object.keys(FNavList).map((e: string, i: number) =>
-                        <div className="space-y-1">
+                        <div className="space-y-1" key={i}>
                             <h3 className="font-semibold">{e}</h3>
                             <div className="grid gap-1">
                                 {FNavList[e].map((e2, i: number) =>

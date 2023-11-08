@@ -15,4 +15,5 @@ export function Brown(props: Props) {
     )
 }
 
-export default { Green, Brown }
+const Button = { Green, Brown }
+export default Button

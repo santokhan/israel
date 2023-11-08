@@ -1,12 +1,7 @@
 'use client'
 
 import { usePathname } from "next/navigation"
-import { ReactNode } from "react"
 import { NavList } from "../header/Navbar"
-
-type Props = {
-    children: ReactNode
-}
 
 export default function BreadCrumb() {
     function getName(): string {
