@@ -2,7 +2,7 @@ import Header from '@/components/header/Header'
 import HomeA from '@/sections/home/A'
 import Accordion from '@/sections/home/Accordion'
 import HomeB from '@/sections/home/B'
-import HomeC from '@/sections/home/C'
+import GreenCard from '@/sections/home/C'
 import Feature from '@/sections/home/Feature'
 import Gallary from '@/sections/home/Gallary'
 import Portfolio from '@/sections/home/Portfolio'
@@ -14,7 +14,7 @@ export default function Home() {
             <Header />
             <HomeA />
             <HomeB />
-            <HomeC />
+            <GreenCard />
             <Slider />
             <Portfolio />
             <Feature />

@@ -1,6 +1,7 @@
 import AppButton from "@/components/button/AppButton";
+import Image from "next/image";
 
-export default function HomeC() {
+export default function GreenCard() {
     const text = {
         title: "את לא צריכה לחכות כדי להרגיש טוב יותר",
         desc: "אם הגעת הנה אני מבינה שכבר התחלת את המסע שלך למען עצמך. להבין טוב יותר איך לפעול כשהחיים מזמנים לנו אתגרים שוב ושוב, מציגים את חוסר הוודאות של העתיד ומעירים את הפצעים של העבר. טוב שבאת. עשית את הצעד הראשון. דברי איתי ונמשיך יחד."
@@ -28,13 +29,14 @@ export default function HomeC() {
                         <p className="text-app-light-pink">{text.desc}</p>
                     </article>
                 </div>
-                <div className="flex flex-wrap lg:flex-nowrap">
+                <div className="grid lg:grid-cols-2 gap-4">
                     {flexData.map((e, i) =>
-                        <div className="p-4" key={i}>
-                            <div className="md:basis-1/2 lg:basis-1/3 grid gap-6 bg-app-gradient text-app-black p-8 rounded-lg">
+                        <div className="text-app-black p-8 rounded-lg relative overflow-hidden space-y-4 bg-app-pink" key={i}>
+                            <Image src="" alt="" className="aspect-video md:aspect-auto md:inset-0 md:absolute" />
+                            <div className="md:w-1/2 grid gap-6 relative">
                                 <article className="space-y-1">
-                                    <h4 className="text-2xl font-medium text-app-brown">{e.title}</h4>
-                                    <p className="text-app-brown">{e.desc}</p>
+                                    <h4 className="text-3xl font-medium text-app-brown">{e.title}</h4>
+                                    <p className="text-app-brown text-xl">{e.desc}</p>
                                 </article>
                                 <div className="">
                                     <button type="button" className="font-medium text-sm px-4 py-2 whitespace-nowrap bg-app-brown text-app-light-pink">
