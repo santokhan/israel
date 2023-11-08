@@ -44,7 +44,7 @@
 ## CSS gradient
 
 ```css
-.class-name {
+.bg-app-gradient {
   background: transparent linear-gradient(
       90deg,
       #fff9f400 0%,
@@ -54,3 +54,17 @@
     no-repeat padding-box;
 }
 ```
+
+## XD Designs (include Assets, imgaes etc...)
+
+### Desktop:
+
+<https://xd.adobe.com/view/5b29a176-f2b1-4f5f-9b38-d95d66cd4e58-0e7a/specs/>
+
+### Mobile:
+
+<https://xd.adobe.com/view/c7905480-130b-4a45-9078-f2732e1647db-92c3/>
+
+### fonts:
+
+<https://fonts.google.com/specimen/Rubik>

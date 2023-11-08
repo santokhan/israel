@@ -1,69 +1,77 @@
+'use client'
+
+import { NavList, SocialMedia } from "../header/Navbar"
 import FooterLogo from "./FooterLogo"
 
 const footerFormTitle = "הרשמה לירחון מתנה במייל"
 const footerFormDesc = "הרשמי לקבלת הירחון בו כל חודש יעלו הדרכות חינמיות ועדכונים מעניינים שמיועד לנשים רגישות שמעוניינות לחיות חיים מאושרים ורגועים."
 const rememberMe = "אני מאשרת לקבל דיוור במייל/בהודעה"
 
-export const FNavList: Record<string, Array<any>> = {
-    "שירות": [
-        {
-            name: "טיפול בקליניקה",
-            path: ""
-        },
-        {
-            name: "סדנה",
-            path: ""
-        },
-        {
-            name: "מוצרים",
-            path: ""
-        },
-    ],
-    "אודות": [
-        {
-            name: "בלוג",
-            path: ""
-        },
-        {
-            name: "עליי",
-            path: ""
-        },
-    ],
+export const FNavList: Record<string, Array<{ name: string, path: string }>> = {
+    "שירות": [...NavList].splice(0, 3),
+    "אודות": [...NavList].splice(3, 2),
 }
 
 export const socialMediaTitle = "להתחבר אלי"
 
 export default function Footer() {
+    const text = {
+        submit: "אני רוצה להצטרף",
+        input: ["שם מלא", "טלפון", "מייל"]
+    }
+
     return (
         <footer className="bg-app-light-gray text-app-black">
-            <div className="w-full max-w-screen-xl mx-auto px-4 py-6 flex flex-wrap">
-                <div className="w-4/12 flex flex-wrap gap-8">
-                    {Object.keys(FNavList).map((e, i) =>
-                        <div className="">
+            <div className="w-full max-w-screen-xl mx-auto px-4 py-6 flex flex-wrap lg:flex-nowrap justify-between gap-6 lg:gap-12">
+                <div className="w-full lg:w-4/12 xl:w-3/12 flex flex-wrap gap-8 order-2 lg:order-1">
+                    {Object.keys(FNavList).map((e: string, i: number) =>
+                        <div className="space-y-1">
                             <h3 className="font-semibold">{e}</h3>
-                            <div className="flex flex-col justify-start">
-                                {FNavList[e].map((e2: any, i: number) =>
-                                    <a href="#" key={i} className="w-auto">{e2.name}</a>
+                            <div className="grid gap-1">
+                                {FNavList[e].map((e2, i: number) =>
+                                    <a href="#" key={i} className="block w-auto">{e2.name}</a>
                                 )}
                             </div>
                         </div>
                     )}
-                    <div className="">
+                    <div className="space-y-1">
                         <h3 className="font-semibold">{socialMediaTitle}</h3>
+                        <SocialMedia />
                     </div>
                 </div>
-                <div className="w-6/12">
-                    <div className=""></div>
-                    <div className="">
-                        <form>
+                <div className="w-full lg:w-9/12 flex flex-wrap lg:flex-nowrap gap-6 lg:gap-12 order-1 lg:order-2">
+                    <form className="order-2 lg:order-1">
+                        <article>
                             <h2 className="text-2xl font-semibold">{footerFormTitle}</h2>
                             <p className="text-lg">{footerFormDesc}</p>
-                            <label className="text-sm flex items-center gap-2"><input type="checkbox" name="" id="" />{rememberMe}</label>
-                        </form>
+                        </article>
+                        <div className="flex flex-wrap xl:flex-nowrap gap-6 mb-2 items-center lg:items-end">
+                            <div className="w-full grid sm:grid-cols-3 gap-6">
+                                <div className="">
+                                    <input type="text" name="" id="" placeholder="שם מלא" className="w-full border-b-2 border-app-black py-0.5 bg-transparent focus:outline-none" />
+                                </div>
+                                <div className="">
+                                    <input type="text" name="" id="" placeholder="טלפון" className="w-full border-b-2 border-app-black py-0.5 bg-transparent focus:outline-none" />
+                                </div>
+                                <div className="">
+                                    <input type="text" name="" id="" placeholder="מייל" className="w-full border-b-2 border-app-black py-0.5 bg-transparent focus:outline-none" />
+                                </div>
+                            </div>
+                            <div className="space-y-4">
+                                <div className="block xl:hidden">
+                                    <label className="text-sm flex items-center gap-2 whitespace-nowrap"><input type="checkbox" name="" id="" className="" />{rememberMe}</label>
+                                </div>
+                                <button
+                                    type="button"
+                                    className="text-gray-900 hover:text-white border border-gray-800 hover:bg-app-black font-medium text-sm px-4 py-1.5 text-center whitespace-nowrap"
+                                >{text.submit}</button>
+                            </div>
+                        </div>
+                        <label className="text-sm xl:flex items-center gap-2 hidden white"><input type="checkbox" name="" id="" className="" />{rememberMe}</label>
+                    </form>
+                    <div className="w-auto order-1 lg:order-2">
+                        <FooterLogo />
                     </div>
-                </div>
-                <div className="w-2/12">
-                    <FooterLogo />
                 </div>
             </div>
         </footer>

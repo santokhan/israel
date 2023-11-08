@@ -3,6 +3,7 @@ import { Rubik } from 'next/font/google'
 import './globals.css'
 import NavBar from '@/components/header/Navbar'
 import Footer from '@/components/footer/Footer'
+import Head from 'next/head'
 
 const rubik = Rubik({ subsets: ['latin'] })
 
@@ -18,9 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={rubik.className}>
+      <Head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+      </Head>
+      <body className={[rubik.className, "bg-app-cream"].join(" ")}>
         <NavBar />
-        <main className="mt-[62px] ">
+        <main className="mt-[62px]">
           {children}
         </main>
         <Footer />
