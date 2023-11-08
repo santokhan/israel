@@ -1,6 +1,6 @@
 'use client'
 
-import { NavList, SocialMedia } from "../header/Navbar"
+import { NavLink, NavList, SocialMedia } from "../header/Navbar"
 import FooterLogo from "./FooterLogo"
 
 const footerFormTitle = "הרשמה לירחון מתנה במייל"
@@ -29,7 +29,7 @@ export default function Footer() {
                             <h3 className="font-semibold">{e}</h3>
                             <div className="grid gap-1">
                                 {FNavList[e].map((e2, i: number) =>
-                                    <a href="#" key={i} className="block w-auto">{e2.name}</a>
+                                    <NavLink path={e2.path} name={e2.name} key={i} />
                                 )}
                             </div>
                         </div>

@@ -1,3 +1,5 @@
+import Button from "../button/Button"
+
 export default function Header() {
     const text = {
         title: "את לא צריכה לחכות כדי להרגיש טוב יותר",
@@ -12,7 +14,7 @@ export default function Header() {
                     <h1 className="text-5xl font-bold">{text.title}</h1>
                     <p className="text-3xl">{text.desc}</p>
                     <div className="">
-                        <button type="button" className="text-white bg-app-green font-medium text-sm px-4 py-2 text-center whitespace-nowrap">{text.button}</button>
+                        <Button.Green>{text.button}</Button.Green>
                     </div>
                 </article>
                 <div className="lg:w-full"></div>

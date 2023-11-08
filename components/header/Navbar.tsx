@@ -30,7 +30,7 @@ export const NavList = [
 export function SocialMedia() {
     return (
         <div className="flex gap-2">
-            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer" className='text-app-black w-6 h-6'>
+            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer" className='text-app-black w-6 h-6 hover:text-app-brown focus:text-app-brown'>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className='w-full h-full'
@@ -60,7 +60,7 @@ export function SocialMedia() {
                     />
                 </svg>
             </a>
-            <a href="http://facebook.com" target="_blank" rel="noopener noreferrer" className='text-app-black w-6 h-6'>
+            <a href="http://facebook.com" target="_blank" rel="noopener noreferrer" className='text-app-black w-6 h-6 hover:text-app-brown focus:text-app-brown'>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className='w-full h-full'
@@ -90,9 +90,15 @@ export function HamBurgerMenu({ handleExpand }: { handleExpand: () => void }) {
     return (
         <button type="button" className="w-8 h-8 hover:text-app-brown" onClick={handleExpand}>
             <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full" viewBox="0 0 24 24" fill="none">
-                <path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"></path>
             </svg>
         </button>
+    )
+}
+
+export function NavLink(props: { path: string, name: string }) {
+    return (
+        <Link href={props.path} className={"text-app-black whitespace-nowrap hover:text-app-brown focus:text-app-brown"}>{props.name}</Link>
     )
 }
 
@@ -107,14 +113,14 @@ export default function NavBar() {
             <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4">
                 <div className="w-full flex items-center justify-between">
                     <div className="w-8 lg:w-0 block lg:hidden"><HamBurgerMenu handleExpand={handleExpand} /></div>
-                    <a href="#" className="flex items-center"><Logo /></a>
+                    <a href="/" className="flex items-center"><Logo /></a>
                     <div className=""></div>
                 </div>
                 <div className={["items-center justify-between w-auto", expand ? "absolute top-full right-0 bg-app-cream p-4" : "hidden", "lg:p-0 lg:relative lg:flex lg:w-auto"].join(" ")} id="navbar-sticky">
                     <ul className="flex flex-col p-4 lg:p-0 font-medium lg:flex-row gap-y-2 lg:gap-8 lg:mt-0">
                         {NavList.map((e, i) =>
-                            <li key={i + 'a'} className="">
-                                <Link href={e.path} className={"text-app-black whitespace-nowrap"}>{e.name}</Link>
+                            <li key={i + 'a'}>
+                                <NavLink path={e.path} name={e.name} />
                             </li>
                         )}
                     </ul>

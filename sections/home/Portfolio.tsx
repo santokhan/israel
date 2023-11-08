@@ -1,3 +1,4 @@
+import Button from "@/components/button/Button";
 import Image from "next/image";
 
 export default function Portfolio() {
@@ -16,7 +17,7 @@ export default function Portfolio() {
                         <h1 className="text-3xl font-bold text-app-green">{text.title}</h1>
                         <p className="text-app-green text-xl">{text.desc}</p>
                         <div className="">
-                            <button type="button" className="text-white bg-app-green font-medium text-sm px-4 py-2 text-center whitespace-nowrap">{text.button}</button>
+                            <Button.Green>{text.button}</Button.Green>
                         </div>
                     </article>
                 </div>

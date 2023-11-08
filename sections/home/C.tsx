@@ -1,4 +1,5 @@
 import AppButton from "@/components/button/AppButton";
+import Button from "@/components/button/Button";
 import Image from "next/image";
 
 export default function GreenCard() {
@@ -31,17 +32,15 @@ export default function GreenCard() {
                 </div>
                 <div className="grid lg:grid-cols-2 gap-4">
                     {flexData.map((e, i) =>
-                        <div className="text-app-black p-8 rounded-lg relative overflow-hidden space-y-4 bg-app-pink" key={i}>
-                            <Image src="" alt="" className="aspect-video md:aspect-auto md:inset-0 md:absolute" />
-                            <div className="md:w-1/2 grid gap-6 relative">
+                        <div className="text-app-black rounded-lg relative overflow-hidden bg-app-light-pink" key={i}>
+                            <Image src="" alt="" className="aspect-video md:aspect-auto md:inset-0 md:absolute bg-white" />
+                            <div className="md:w-1/2 grid gap-6 relative p-6 lg:p-8">
                                 <article className="space-y-1">
                                     <h4 className="text-3xl font-medium text-app-brown">{e.title}</h4>
                                     <p className="text-app-brown text-xl">{e.desc}</p>
                                 </article>
                                 <div className="">
-                                    <button type="button" className="font-medium text-sm px-4 py-2 whitespace-nowrap bg-app-brown text-app-light-pink">
-                                        {e.button}
-                                    </button>
+                                    <Button.Brown>{e.button}</Button.Brown>
                                 </div>
                             </div>
                         </div>

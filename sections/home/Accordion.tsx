@@ -16,13 +16,13 @@ export function AccordionItem(props: Props) {
 
     return (
         <div className="bg-app-gradient text-app-black py-4 border-t-2 border-app-brown" >
-            <button className="w-full flex gap-4 justify-between" onClick={handleExpand}>
-                <h4 className="text-xl font-medium text-app-brown">{props.title}</h4>
+            <button className="w-full flex gap-4 justify-between items-center text-app-brown" onClick={handleExpand}>
+                <h4 className="text-xl font-medium">{props.title}</h4>
                 {
                     expand ?
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M6 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M6 12h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                         :
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M6 12h12M12 18V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M6 12h12M12 18V6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                 }
             </button>
             {expand && <p className="text-app-brown">{props.desc}</p>}

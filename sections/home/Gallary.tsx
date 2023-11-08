@@ -29,13 +29,14 @@ export default function Gallary() {
     return (
         <div className="py-12">
             <div className="w-full max-w-screen-xl mx-auto px-4 flex flex-col gap-6">
-                <a className="text-xl font-medium text-app-brown flex items-center justify-center gap-2 w-7 h-7">
+                <a className="text-xl font-medium text-app-brown flex items-center justify-center gap-2 relative">
                     <span>{title}</span>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className='w-full h-full'
+                        className='w-7 h-7'
                         viewBox="0 0 24 24"
                         fill="none"
+                        aria-hidden="true"
                     >
                         <path
                             d="M9 22h6c5 0 7-2 7-7V9c0-5-2-7-7-7H9C4 2 2 4 2 9v6c0 5 2 7 7 7Z"

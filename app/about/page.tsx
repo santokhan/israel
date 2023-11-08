@@ -1,113 +1,107 @@
 import Image from 'next/image'
+import Image1 from '../../assets/images/about/1.png'
+import Image2 from '../../assets/images/about/2.png'
+
+export function About() {
+    const text = {
+        title: "המסע שלי",
+    }
+
+    const about = [
+        {
+            desc: "את דרכי הטיפולית התחלתי עם ילדים בגיל הרך בחינוך המיוחד. מאז ומתמיד העדפתי את חברתם של ילדים. האותנטיות, היצירתיות, הפעולה מתוך הנאה והשראה, חקר וסקרנות תמידית ופשוט חיפוש מדויק אחרי מה שמעניין אותם והופך אותם מאושרים הובילו ומשכו אותי לרצות להיות בחברתם ולהפוך לאותנטית ביותר עבורי ועבורם. כשנכנסו לחיי לראשונה ילדים מיוחדים וייחודיים (ועם צרכים מיוחדים) נפעמתי מדרך החשיבה השונה ומהאופן בו הם רואים וחווים את העולם אחרת. הסתקרנתי ונמשכתי להבין ולחקור איך אני יכולה לגשת ולהתחבר ובסופו של דבר להבין ולסייע בתרגום של הרגשות והרצונות שלהם בחזרה אל העולם שסביבם. עבדתי כדי למצוא דרכים יצירתיות להגיע אליהם בצורה הכי מדויקת ולעזור להם להתפתח בדרך שנכונה להם. כשכבר התחלתי לעבוד בגנים של החינוך המיוחד וניהלתי גנים משלי העולם שלי התרחב כפליים. נחשפתי למעגלים התומכים, שהיום אני רואה כמעגלים הוליסטיים שמחוברים בצורה הדוקה אל הילדים, אל ההורים והמשפחה (וגם לכל אנשי הצוות שבחרו לעבוד בעבודה כל כך מדהימה כי גם בהם יש את הקריאה הפנימית הזו) ונחתה בי ההבנה שבכדי להגיע אל הילד לא מספיק שרק אני אעשה את זה אלא כל מי שאיכשהו קשור וחלק מהחיים. בשלב הזה התחלתי להדריך צוותים רחבים מנקודת המבט הזו, הכשרתי סטודנטיות לחינוך מיוחד בעבודתן הפרקטית בשטח תוך קשר ישיר עם המכללות לחינוך שבהן לומדות, ליוויתי קבוצות של סטודנטיות לקלינאות תקשורת, פיזיותרפיה וריפוי בעיסוק וגם עבדתי צמוד עם סטודנטיות לעבודה סוציאלית.",
+            src: ""
+        },
+        {
+            desc: "עם השנים וככל שפגשתי עוד ועוד משפחות בגנים ובקליניקה, כך האמפתיה שלי אל ההורים גברה והרגשתי את הצורך הזועק של ההורים שייראו גם אותם. הם, שנותנים את הכל למען ילדם ולמען אחרים זקוקים לרגע אחד שמישהו יראה אותם, יבחין בקושי שלהם ויאפשר להם לפרוק, לזהות איפה הם נמצאים, להבין מה מדויק להם וללמוד כלים פרקטיים. הנקודה הזו, ביחד עם ההבנה שילד-הורה זה מקשה אחת גרמו לי להשקיע זמן וקשב רב בהורים עצמם ולתת להם את ההכרה והכלים שלהם הם זקוקים. כאשר אני הפכתי לאמא בעצמי לפני שנתיים נוכחתי לראות ממקור ראשון כמה לתת ולהיות עבור מישהו אחר יכול להיות הדבר הכי עוצמתי ומדהים שעשיתי בחיי אבל במקביל כמה שבירות בזהות שלי, חרדות, פחדים, אפיסת כוחות ותסכול יש בתפקיד הזה. הייתי צריכה ללמוד מחדש מי אני כאדם, כאמא, כבת זוג, כאשת מקצוע. מה מעניין אותי, מה מוביל אותי, מה מדויק לי. מתוך המקום הזה, ומתוך משבר רפואי משפחתי שעברתי בשנים האחרונות, הבנתי שהבחירה שלנו בעצמנו היא לא מותרות אלא הכרח. הכנסתי את עצמי אל סדר העדיפויות בכדי שאוכל לחיות חיים טובים ומאושרים וכדי שאוכל לטפל באחרים בצורה מלאה, מתוך השראה ורצון. וזה בדיוק מה שאני עושה בקליניקה שלי בטיפולים הפרטניים ובסדנאות הקבוצתיות עם כל מי שמגיעה אליי לטיפול. בשיח משותף אנחנו מביאות אותה אל סדר העדיפויות, לומדות לנקות את כל מה שכבר לא רלוונטי ולא משרת אותה יותר, מגלות ומנכסות מחדש את הכוחות שלה, מתרגלות מדיטציה ביחד (לא מחייב, רק מי שרוצה) ומדייקות אותה לעצמה יחד עם כלים פרקטיים שיאפשרו לה לחיות חיים רגועים ומאושרים יותר, כמו שמגיע לה.",
+            src: ""
+        },
+    ]
+
+    return (
+        <section className="space-y-6">
+            <div className="grid lg:grid-cols-12 lg:gap-4 text-app-black p-8">
+                <Image src={Image1} alt="" className="col-span-5 w-full lg:h-full object-contain" />
+                <div className="col-span-7 py-12 space-y-4">
+                    <h4 className="text-4xl font-bold text-app-brown">{text.title}</h4>
+                    <p className="text-app-black">{about[0].desc}</p>
+                </div>
+            </div>
+            <div className="grid lg:grid-cols-12 lg:gap-4 text-app-black p-8">
+                <div className="col-span-7 py-12 space-y-4 order-2 lg:order-1">
+                    <p className="text-app-black">{about[1].desc}</p>
+                </div>
+                <Image src={Image2} alt="" className="col-span-5 w-full lg:h-full object-contain order-1 lg:order-2" />
+            </div>
+        </section>
+    );
+}
+
+export function SectionB() {
+    const text = {
+        title: "ניסיון בשטח",
+    }
+
+    const flexData = [
+        {
+            desc: "טיפולים בקליניקה פרטית, בעמותות והנחיית סדנאות ב- 6 שנים האחרונות.העבודה הפרטנית החלה מתוך רצון להעמיק תהליכים שלא בהכרח הצליחו לקבל מענה מספק בתוך מסגרת.",
+        },
+        {
+            desc: "עבודת שטח צמודה עם ילדים, הדרכת הורים, צוותים וסטודנטים במסגרות שונות בירושלים ובתל אביב ב-15 שנה האחרונות. החשיבות להיצמד ולהישאר בשטח היא קריטית בעיני כי שם הדברים נמצאים באמת.",
+        },
+    ]
+
+    return (
+        <section className="space-y-6">
+            <h4 className="text-4xl font-bold text-app-brown text-center">{text.title}</h4>
+            <div className="flex gap-6 lg:gap-8 justify-center items-center">
+                {flexData.map((e, i) =>
+                    <div className="max-w-lg space-y-2 bg-app-light-gray text-app-black p-8 rounded-lg text-center" key={i}>
+                        <h4 className="font-medium text-lg text-app-black">{e.desc}</h4>
+                    </div>
+                )}
+            </div>
+        </section>
+    );
+}
+
+export function SectionC() {
+    const text = {
+        title: "הכשרה מקצועית",
+    }
+
+    const flexData = [
+        {
+            desc: "תואר ראשון ושני בחינוך עם התמחות בפן טיפולי ובצרכים מיוחדים מורכבים.",
+        },
+        {
+            desc: "לימודי תעודה בטיפול התנהגותי קוגניטיבי ותרפיית קבלה ומחויבות במכון פסגות בחסות האוניברסיטה הפתוחה.",
+        },
+        {
+            desc: "מאז 2009 אני מתרגל מדיטציית ויפאסנה יומית ומיינדפולנס. התרגול הפך לדבר שבשגרה בחיי.",
+        },
+    ]
+
+    return (
+        <section className="space-y-6">
+            <h4 className="text-3xl font-bold text-app-brown text-center">{text.title}</h4>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8 justify-center items-center text-center">
+                {flexData.map((e, i) =>
+                    <div className="sapce-y-2 bg-app-light-pink text-app-black p-6 rounded-lg" key={i}>
+                        <h4 className="font-medium text-app-black">{e.desc}</h4>
+                    </div>
+                )}
+            </div>
+        </section>
+    );
+}
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-                <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-                    Get started by editing&nbsp;
-                    <code className="font-mono font-bold">app/page.tsx</code>
-                </p>
-                <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-                    <a
-                        className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-                        href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        By{' '}
-                        <Image
-                            src="/vercel.svg"
-                            alt="Vercel Logo"
-                            className="dark:invert"
-                            width={100}
-                            height={24}
-                            priority
-                        />
-                    </a>
-                </div>
-            </div>
-
-            <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-                <Image
-                    className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-                    src="/next.svg"
-                    alt="Next.js Logo"
-                    width={180}
-                    height={37}
-                    priority
-                />
-            </div>
-
-            <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-                <a
-                    href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                    className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <h2 className={`mb-3 text-2xl font-semibold`}>
-                        Docs{' '}
-                        <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                            -&gt;
-                        </span>
-                    </h2>
-                    <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-                        Find in-depth information about Next.js features and API.
-                    </p>
-                </a>
-
-                <a
-                    href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                    className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <h2 className={`mb-3 text-2xl font-semibold`}>
-                        Learn{' '}
-                        <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                            -&gt;
-                        </span>
-                    </h2>
-                    <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-                        Learn about Next.js in an interactive course with&nbsp;quizzes!
-                    </p>
-                </a>
-
-                <a
-                    href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                    className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <h2 className={`mb-3 text-2xl font-semibold`}>
-                        Templates{' '}
-                        <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                            -&gt;
-                        </span>
-                    </h2>
-                    <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-                        Explore the Next.js 13 playground.
-                    </p>
-                </a>
-
-                <a
-                    href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                    className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <h2 className={`mb-3 text-2xl font-semibold`}>
-                        Deploy{' '}
-                        <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                            -&gt;
-                        </span>
-                    </h2>
-                    <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-                        Instantly deploy your Next.js site to a shareable URL with Vercel.
-                    </p>
-                </a>
-            </div>
-        </main>
+        <div className="max-w-screen-xl mx-auto px-4 py-8 lg:py-16 space-y-12 lg:space-y-20">
+            <About />
+            <SectionB />
+            <SectionC />
+        </div>
     )
 }
