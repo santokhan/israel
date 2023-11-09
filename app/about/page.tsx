@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Image1 from '../../assets/images/about/1.png'
 import Image2 from '../../assets/images/about/2.png'
 
-export function About() {
+export function AboutSection() {
     const text = {
         title: "המסע שלי",
     }
@@ -96,10 +96,10 @@ export function SectionC() {
     );
 }
 
-export default function Home() {
+export default function Page() {
     return (
         <div className="max-w-screen-xl mx-auto px-4 py-8 lg:py-16 space-y-12 lg:space-y-20">
-            <About />
+            <AboutSection />
             <SectionB />
             <SectionC />
         </div>
