@@ -2,8 +2,9 @@ import { usePathname } from "next/navigation"
 import { NavList } from "../header/Navbar"
 
 export default function BreadCrumb() {
+    const path = usePathname()
+
     function getName(): string {
-        const path = usePathname()
         const firstPath = path.split("/")[1]
 
         let name;
