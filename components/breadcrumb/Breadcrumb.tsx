@@ -22,7 +22,7 @@ export default function BreadCrumb() {
     if (path) {
         return (
             <section className="bg-app-green">
-                <div className="w-full max-w-screen-xl mx-auto px-4 py-20 grid place-items-center">
+                <div className="w-full max-w-screen-xl mx-auto px-4 py-10 lg:py-20 grid place-items-center">
                     <h1 className="text-4xl font-bold text-app-cream">{getName()}</h1>
                 </div>
             </section>

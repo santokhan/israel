@@ -20,18 +20,18 @@ export function SectionA() {
 
     return (
         <section className="space-y-6">
-            <div className="grid lg:grid-cols-12 lg:gap-4 text-app-black p-8 items-center">
-                <Image src={Image1} alt="" className="col-span-5 w-full lg:h-full object-contain" />
-                <div className="col-span-7 space-y-4">
+            <div className="grid lg:grid-cols-12 lg:gap-4 text-app-black lg:p-8 items-center">
+                <Image src={Image1} alt="" className="lg:col-span-5 w-full lg:h-full object-contain" />
+                <div className="lg:col-span-7 space-y-4">
                     <h4 className="text-4xl font-bold text-app-brown">{text.title}</h4>
                     <p className="text-app-black text-lg">{about[0].desc}</p>
                 </div>
             </div>
-            <div className="grid lg:grid-cols-12 lg:gap-4 text-app-black p-8 items-center">
-                <div className="col-span-7 space-y-4 order-2 lg:order-1">
+            <div className="grid lg:grid-cols-12 lg:gap-4 text-app-black lg:p-8 items-center">
+                <div className="lg:col-span-7 space-y-4 order-2 lg:order-1">
                     <p className="text-app-black text-lg">{about[1].desc}</p>
                 </div>
-                <Image src={Image2} alt="" className="col-span-5 w-full lg:h-full object-contain order-1 lg:order-2" />
+                <Image src={Image2} alt="" className="lg:col-span-5 w-full lg:h-full object-contain order-1 lg:order-2" />
             </div>
         </section>
     );
@@ -54,7 +54,7 @@ export function SectionB() {
     return (
         <section className="space-y-6">
             <h4 className="text-4xl font-bold text-app-brown text-center">{text.title}</h4>
-            <div className="flex gap-6 lg:gap-8 justify-center items-center">
+            <div className="grid md:grid-cols-2 gap-6 lg:gap-8 place-items-center">
                 {flexData.map((e, i) =>
                     <div className="max-w-lg space-y-2 bg-app-light-gray text-app-black p-8 rounded-lg text-center" key={i}>
                         <h4 className="font-medium text-lg text-app-black">{e.desc}</h4>

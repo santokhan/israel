@@ -45,16 +45,16 @@ export default function Footer() {
                             <h2 className="text-2xl font-semibold">{footerFormTitle}</h2>
                             <p className="text-lg">{footerFormDesc}</p>
                         </article>
-                        <div className="flex flex-wrap xl:flex-nowrap gap-6 mb-2 items-center lg:items-end">
+                        <div className="flex flex-wrap xl:flex-nowrap gap-6 mb-2 items-center lg:items-end py-2">
                             <div className="w-full grid sm:grid-cols-3 gap-6">
                                 <div className="">
-                                    <input type="text" name="" id="" placeholder="שם מלא" className="w-full border-b-2 border-app-black py-0.5 bg-transparent focus:outline-none" />
+                                    <input type="text" name="" id="" placeholder="שם מלא" className="w-full border-b sm:border-b-2 border-app-black py-0.5 bg-transparent focus:outline-none" />
                                 </div>
                                 <div className="">
-                                    <input type="text" name="" id="" placeholder="טלפון" className="w-full border-b-2 border-app-black py-0.5 bg-transparent focus:outline-none" />
+                                    <input type="text" name="" id="" placeholder="טלפון" className="w-full border-b sm:border-b-2 border-app-black py-0.5 bg-transparent focus:outline-none" />
                                 </div>
                                 <div className="">
-                                    <input type="text" name="" id="" placeholder="מייל" className="w-full border-b-2 border-app-black py-0.5 bg-transparent focus:outline-none" />
+                                    <input type="text" name="" id="" placeholder="מייל" className="w-full border-b sm:border-b-2 border-app-black py-0.5 bg-transparent focus:outline-none" />
                                 </div>
                             </div>
                             <div className="space-y-4">

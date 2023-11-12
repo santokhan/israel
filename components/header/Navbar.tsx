@@ -102,24 +102,28 @@ export function NavLink(props: { path: string, name: string }) {
     )
 }
 
+export function DDNavLink(props: { path: string, name: string, handleMenu: () => void }) {
+    return (
+        <Link href={props.path} className={"text-app-cream whitespace-nowrap text-3xl font-semibold hover:underline"} onClick={props.handleMenu}>{props.name}</Link>
+    )
+}
+
 export default function NavBar() {
     const [expand, setexpand] = useState<boolean>(false)
-    function handleExpand() {
-        setexpand(!expand)
-    }
+    function handleExpand() { setexpand(!expand) }
 
     return (
         <nav className="fixed w-full z-20 top-0 left-0 bg-app-cream">
             <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4">
                 <div className="w-full flex items-center justify-between">
-                    <div className="w-8 lg:w-0 block lg:hidden"><HamBurgerMenu handleExpand={handleExpand} /></div>
+                    <div className="w-8 h-8 lg:w-0 grid place-items-center lg:hidden"><HamBurgerMenu handleExpand={handleExpand} /></div>
                     <a href="/" className="flex items-center"><Logo /></a>
-                    <div className=""></div>
+                    <div className="w-8"></div>
                 </div>
-                <div className={["items-center justify-between w-auto", expand ? "absolute top-full right-0 bg-app-cream p-4" : "hidden", "lg:p-0 lg:relative lg:flex lg:w-auto"].join(" ")} id="navbar-sticky">
+                <div className={["hidden lg:flex items-center justify-between w-auto"].join(" ")} id="navbar-sticky">
                     <ul className="flex flex-col p-4 lg:p-0 font-medium lg:flex-row gap-y-2 lg:gap-8 lg:mt-0">
                         {NavList.map((e, i) =>
-                            <li key={i + 'a'}>
+                            <li key={i}>
                                 <NavLink path={e.path} name={e.name} />
                             </li>
                         )}
@@ -129,6 +133,23 @@ export default function NavBar() {
                     <SocialMedia />
                 </div>
             </div>
+            {expand &&
+                <div className={"w-full fixed top-0 right-0 bg-app-green text-app-cream p-4 h-screen"}>
+                    <div className="w-full flex items-center">
+                        <button type="button" className="w-8 h-8 grid place-items-center rounded-lg text-white" onClick={handleExpand}>
+                            <svg className="w-1/2 h-1/2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" /></svg><span className="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <ul className="grid place-items-center p-4 gap-y-6">
+                        {NavList.map((e, i) =>
+                            <li key={i}>
+                                <DDNavLink path={e.path} name={e.name} handleMenu={handleExpand} />
+                            </li>
+                        )}
+                    </ul>
+                </div>
+            }
         </nav>
     )
 }
