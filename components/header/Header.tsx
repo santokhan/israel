@@ -8,16 +8,18 @@ export default function Header() {
     }
 
     return (
-        <header className="bg-app-light-pink bg-header-banner text-app-green">
-            <div className="max-w-screen-xl mx-auto px-4 grid lg:grid-cols-2 gap-20">
-                <article className="w-full px-4 py-40 lg:py-60 space-y-4">
-                    <h1 className="text-5xl font-bold">{text.title}</h1>
-                    <p className="text-3xl">{text.desc}</p>
+        <header className="bg-app-light-pink lg:bg-header-banner text-app-green">
+            <div className="max-w-screen-xl mx-auto grid lg:grid-cols-2 md:gap-20">
+                <article className="w-full px-4 py-16 md:py-40 lg:py-60 space-y-4">
+                    <h1 className="text-4xl lg:text-5xl font-bold">{text.title}</h1>
+                    <p className="text-2xl lg:text-3xl">{text.desc}</p>
                     <div className="">
                         <Button.Green>{text.button}</Button.Green>
                     </div>
                 </article>
-                <div className="lg:w-full"></div>
+                <div className="lg:w-full">
+                    <img src="/assets/images/header/banner.png" alt="/public/assets/images/header/banner.png" className="w-full aspect-square object-cover" />
+                </div>
             </div>
         </header>
     )
