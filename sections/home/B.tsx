@@ -49,13 +49,13 @@ export default function HomeB() {
     return (
         <section className="py-12 lg:py-20">
             <div className="w-full max-w-screen-xl mx-auto px-4">
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
                     {flexData.map((e, i) =>
-                        <figure className="md:basis-1/2 lg:basis-1/3 grid place-items-center gap-4 text-center bg-app-pink text-app-black p-8 rounded-lg" key={i}>
+                        <figure className="max-w-xs grid place-items-center gap-4 text-center bg-app-pink text-app-black p-6 rounded-lg" key={i}>
                             {e.icon()}
                             <article className="space-y-1">
-                                <h4 className="text-lg font-medium text-app-brown">{e.title}</h4>
-                                <p className="text-app-brown">{e.desc}</p>
+                                <h4 className="text-xl font-medium text-app-brown">{e.title}</h4>
+                                <p className="text-app-black font-medium">{e.desc}</p>
                             </article>
                         </figure>
                     )}

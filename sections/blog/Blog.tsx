@@ -7,55 +7,55 @@ export function Post() {
         {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
-            link: "",
+            link: "/article",
             src: BlogImage1
         },
         {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
-            link: "",
+            link: "/article",
             src: BlogImage1
         },
         {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
-            link: "",
+            link: "/article",
             src: BlogImage1
         },
         {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
-            link: "",
+            link: "/article",
             src: BlogImage1
         },
         {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
-            link: "",
+            link: "/article",
             src: BlogImage1
         },
         {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
-            link: "",
+            link: "/article",
             src: BlogImage1
         },
         {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
-            link: "",
+            link: "/article",
             src: BlogImage1
         },
         {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
-            link: "",
+            link: "/article",
             src: BlogImage1
         },
         {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
-            link: "",
+            link: "/article",
             src: BlogImage1
         },
     ]

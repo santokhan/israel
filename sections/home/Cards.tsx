@@ -15,7 +15,7 @@ export default function Cards() {
     ]
 
     return (
-        <section className="py-12 lg:py-16">
+        <section className="py-12">
             <div className="w-full max-w-screen-lg mx-auto p-4">
                 <div className="grid lg:grid-cols-2 gap-8">
                     <div className="bg-app-light-pink">
