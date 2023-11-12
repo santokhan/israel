@@ -61,10 +61,10 @@ export default function Gallary() {
                         />
                     </svg>
                 </a>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                     {imageList.map((e, i) =>
                         <figure className="w-full" key={i}>
-                            <Image src={""} alt="" className="w-full h-full bg-app-light-green aspect-square object-cover" />
+                            <img src={"/assets/images/home/gallary/1.png"} alt="" className="w-full h-full bg-app-light-green aspect-square object-cover" />
                         </figure>
                     )}
                 </div>

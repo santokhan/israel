@@ -12,7 +12,7 @@ export default function Portfolio() {
         <div className="bg-app-pink">
             <div className="w-full max-w-screen-xl mx-auto px-4">
                 <div className="grid lg:grid-cols-2 lg:gap-8">
-                    <Image src="" alt="" className="w-full h-full aspect-square lg:aspect-auto bg-app-green my-6 lg:my-0" />
+                    <img src="/assets/images/home/portfolio.png" alt="portfolio" className="w-full h-full aspect-square lg:aspect-auto object-cover bg-app-green my-6 lg:my-0" />
                     <article className="w-full px-4 space-y-4 py-12 lg:py-32">
                         <h1 className="text-3xl font-bold text-app-green">{text.title}</h1>
                         <p className="text-app-green text-xl">{text.desc}</p>
