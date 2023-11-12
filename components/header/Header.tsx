@@ -17,7 +17,7 @@ export default function Header() {
                         <Button.Green>{text.button}</Button.Green>
                     </div>
                 </article>
-                <div className="lg:w-full">
+                <div className="block lg:hidden lg:w-full">
                     <img src="/assets/images/header/banner.png" alt="/public/assets/images/header/banner.png" className="w-full aspect-square object-cover" />
                 </div>
             </div>
