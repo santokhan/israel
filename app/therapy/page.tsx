@@ -8,7 +8,7 @@ export default function Page() {
             <BreadCrumb />
             <div className="w-full max-w-screen-xl mx-auto px-4 space-y-12 lg:space-y-20 py-12 lg:py-20">
                 <SectionA />
-                <hr />
+                <hr className="border-t border-app-brown" />
                 <SectionB />
                 <SectionC />
             </div>

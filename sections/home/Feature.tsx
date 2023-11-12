@@ -30,7 +30,7 @@ export default function Feature() {
         <div className="py-12 lg:py-20">
             <div className="w-full max-w-screen-xl mx-auto px-4 space-y-6">
                 <h1 className="text-3xl font-bold text-app-brown">{title}</h1>
-                <hr className="border-t-2 border-app-brown" />
+                <hr className="border-t border-app-brown" />
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-4">
                     {flexData.map((e, i) =>
                         <Link href={e.link} className="text-app-brown hover:text-app-green space-y-3" key={i}>

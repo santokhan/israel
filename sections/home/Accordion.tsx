@@ -15,7 +15,7 @@ export function AccordionItem(props: Props) {
     }
 
     return (
-        <div className="bg-app-gradient text-app-black py-4 border-b-2 border-app-black" >
+        <div className="bg-app-gradient text-app-black py-4 border-b border-app-black" >
             <button className="w-full flex gap-4 justify-between items-center text-app-black" onClick={handleExpand}>
                 <h4 className="text-xl font-medium">{props.title}</h4>
                 {
@@ -63,7 +63,7 @@ export default function Accordion() {
         <div className="py-8 lg:py-16">
             <div className="w-full max-w-screen-xl mx-auto px-4">
                 <h1 className="text-3xl font-bold text-app-brown mb-4">{accordionTitle}</h1>
-                <hr className="border-t-2 border-app-brown" />
+                <hr className="border-t border-app-black" />
                 <div className="">
                     {flexData.map((e, i) =>
                         <AccordionItem title={e.title} desc={e.desc} />
