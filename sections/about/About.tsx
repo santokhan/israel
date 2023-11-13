@@ -21,7 +21,7 @@ export function SectionA() {
     return (
         <section className="space-y-6">
             <div className="grid lg:grid-cols-12 lg:gap-4 text-app-black lg:p-8 items-center">
-                <Image src={Image1} alt="" className="lg:col-span-5 w-full lg:h-full object-contain" />
+                <img src="/assets/images/about/1.png" alt="" className="lg:col-span-5 w-full lg:h-full object-contain" />
                 <div className="lg:col-span-7 space-y-4">
                     <h4 className="text-4xl font-bold text-app-brown">{text.title}</h4>
                     <p className="text-app-black text-lg">{about[0].desc}</p>
@@ -31,7 +31,7 @@ export function SectionA() {
                 <div className="lg:col-span-7 space-y-4 order-2 lg:order-1">
                     <p className="text-app-black text-lg">{about[1].desc}</p>
                 </div>
-                <Image src={Image2} alt="" className="lg:col-span-5 w-full lg:h-full object-contain order-1 lg:order-2" />
+                <img src="/assets/images/about/2.png" className="lg:col-span-5 w-full lg:h-full object-contain order-1 lg:order-2" />
             </div>
         </section>
     );

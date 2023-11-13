@@ -70,7 +70,7 @@ export function SectionB() {
                 {cardList.map((e, i) =>
                     <div className="bg-white" key={i}>
                         <figure>
-                            <Image src={e.src} alt="" className="w-full aspect-video object-cover" />
+                            <img src="/assets/images/workshop/1.png" alt="" className="w-full aspect-video object-cover" />
                         </figure>
                         <div className="p-6 space-y-4">
                             <h4 className="text-3xl font-bold text-app-brown">{e.title}</h4>

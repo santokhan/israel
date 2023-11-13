@@ -8,55 +8,46 @@ export function Post() {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
             link: "/article",
-            src: BlogImage1
         },
         {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
             link: "/article",
-            src: BlogImage1
         },
         {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
             link: "/article",
-            src: BlogImage1
         },
         {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
             link: "/article",
-            src: BlogImage1
         },
         {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
             link: "/article",
-            src: BlogImage1
         },
         {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
             link: "/article",
-            src: BlogImage1
         },
         {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
             link: "/article",
-            src: BlogImage1
         },
         {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
             link: "/article",
-            src: BlogImage1
         },
         {
             title: "ארוחה משפחתית. איך עושים את זה?",
             desc: "",
             link: "/article",
-            src: BlogImage1
         },
     ]
 
@@ -67,7 +58,7 @@ export function Post() {
                     {flexData.map((e, i) =>
                         <Link href={e.link} className="max-w-xs text-app-black hover:text-app-green space-y-3" key={i}>
                             <div className="">
-                                <Image src={e.src} alt="" className="w-full h-full aspect-[4/3] bg-app-light-green object-cover" />
+                                <img src="/assets/images/blog/1.png" alt="" className="w-full h-full aspect-[4/3] bg-app-light-green object-cover" />
                             </div>
                             <div className="space-y-1">
                                 <h4 className="text-2xl font-medium">{e.title}</h4>
