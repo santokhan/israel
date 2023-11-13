@@ -30,6 +30,6 @@ export default function Article() {
                 </ul>
                 <p className="text-app-black text-lg">{list.desc}</p>
             </div>
-        </div >
+        </div>
     );
 }

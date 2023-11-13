@@ -1,6 +1,5 @@
 import AppButton from "@/components/button/AppButton";
 import Button from "@/components/button/Button";
-import Image from "next/image";
 
 export default function GreenCard() {
     const text = {

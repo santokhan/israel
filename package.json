@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
-    "serve": "serve -s out"
+    "serve": "serve -s out",
+    "dev:css": "tailwindcss -i app/globals.css -o static/assets/css/style.css --watch"
   },
   "dependencies": {
     "next": "14.0.1",

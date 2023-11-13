@@ -1,25 +1,9 @@
 import Button from '@/components/button/Button'
-import Image from 'next/image';
-import Image1 from '../../assets/images/shop/1.png'
-import Image2 from '../../assets/images/shop/2.png'
-import Image3 from '../../assets/images/shop/3.png'
 
 export function Books() {
     const title = "מדריכים"
-    const text = {
-        button: "להורדה"
-    }
-    const flexData: Array<Record<string, any>> = [
-        {
-            src: Image1
-        },
-        {
-            src: Image2
-        },
-        {
-            src: Image3
-        },
-    ]
+    const text = { button: "להורדה" }
+    const flexData: Array<string> = ["", "", ""]
 
     return (
         <div className="py-12 lg:py-20">
@@ -35,6 +19,6 @@ export function Books() {
                     )}
                 </div>
             </div>
-        </div >
+        </div>
     );
 }

@@ -30,7 +30,7 @@ export const NavList = [
 export function SocialMedia() {
     return (
         <div className="flex gap-2">
-            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer" className='text-app-black w-6 h-6 hover:text-app-brown focus:text-app-brown'>
+            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer" className='text-app-black w-6 h-6 hover:text-app-brown focus:text-app-brown' title="link">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className='w-full h-full'
@@ -60,7 +60,7 @@ export function SocialMedia() {
                     />
                 </svg>
             </a>
-            <a href="http://facebook.com" target="_blank" rel="noopener noreferrer" className='text-app-black w-6 h-6 hover:text-app-brown focus:text-app-brown'>
+            <a href="http://facebook.com" target="_blank" rel="noopener noreferrer" className='text-app-black w-6 h-6 hover:text-app-brown focus:text-app-brown' title="link">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className='w-full h-full'
@@ -88,7 +88,7 @@ export function SocialMedia() {
 }
 export function HamBurgerMenu({ handleExpand }: { handleExpand: () => void }) {
     return (
-        <button type="button" className="w-8 h-8 hover:text-app-brown" onClick={handleExpand}>
+        <button type="button" className="w-8 h-8 hover:text-app-brown" onClick={handleExpand} title="btn" id="hamburgerMenu">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full" viewBox="0 0 24 24" fill="none">
                 <path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"></path>
             </svg>
@@ -117,7 +117,7 @@ export default function NavBar() {
             <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4">
                 <div className="w-full flex items-center justify-between">
                     <div className="w-8 h-8 lg:w-0 grid place-items-center lg:hidden"><HamBurgerMenu handleExpand={handleExpand} /></div>
-                    <a href="/" className="flex items-center"><Logo /></a>
+                    <a href="index.html" className="flex items-center" title="link"><Logo /></a>
                     <div className="w-8"></div>
                 </div>
                 <div className={["hidden lg:flex items-center justify-between w-auto"].join(" ")} id="navbar-sticky">
@@ -134,8 +134,8 @@ export default function NavBar() {
                 </div>
             </div>
             {expand &&
-                <div className={"w-full fixed top-0 right-0 bg-app-green text-app-cream p-4 h-screen"}>
-                    <div className="w-full flex items-center">
+                <div className={"w-full fixed top-0 right-0 bg-app-green text-app-cream p-4 h-screen"} id="dropdownMenu">
+                    <div className="w-full flex items-center" id="closeMenu">
                         <button type="button" className="w-8 h-8 grid place-items-center rounded-lg text-white" onClick={handleExpand}>
                             <svg className="w-1/2 h-1/2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" /></svg><span className="sr-only">Close modal</span>

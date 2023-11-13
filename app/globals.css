@@ -11,7 +11,7 @@
 
 @layer components {
   .bg-header-banner {
-    background-image: url(../assets/images/header/banner.png);
+    background-image: url(/assets/images/header/banner.png);
     background-position-x: left;
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@
 
   @media (min-width: 1024px) {
     .bg-header-banner {
-      background-image: url(../assets/images/header/banner.png);
+      background-image: url(/assets/images/header/banner.png);
       background-position-x: left;
       background-size: 50vw 100%;
       background-repeat: no-repeat;
@@ -32,6 +32,26 @@
         var(--cream-fff9f4) 100%) 0% 0% no-repeat padding-box;
     background: transparent linear-gradient(90deg, #fff9f400 0%, #fff9f4 100%) 0% 0% no-repeat padding-box;
   }
+
+
 }
 
 @tailwind utilities;
+
+/* Slider */
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullets {
+  margin-top: 6rem;
+  position: relative;
+}
+
+.swiper-pagination-bullet-active {
+  color: #6C3321 !important;
+  background-color: #6C3321 !important;
+}

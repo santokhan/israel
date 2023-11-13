@@ -8,7 +8,8 @@ export default function Header() {
     }
 
     return (
-        <header className="bg-app-light-pink lg:bg-header-banner text-app-green">
+        <header className="bg-app-light-pink text-app-green relative">
+            <img src="/assets/images/header/banner.png" alt="header" className="hidden lg:block absolute left-0 top-0 bottom-0 w-1/2 h-full object-cover" />
             <div className="max-w-screen-xl mx-auto grid lg:grid-cols-2 md:gap-20">
                 <article className="w-full px-4 py-16 md:py-40 lg:py-60 space-y-4">
                     <h1 className="text-4xl lg:text-5xl font-bold">{text.title}</h1>
@@ -18,7 +19,7 @@ export default function Header() {
                     </div>
                 </article>
                 <div className="block lg:hidden lg:w-full">
-                    <img src="/assets/images/header/banner.png" alt="/public/assets/images/header/banner.png" className="w-full aspect-square object-cover" />
+                    <img src="/assets/images/header/banner.png" alt="header" className="w-full aspect-square object-cover" />
                 </div>
             </div>
         </header>

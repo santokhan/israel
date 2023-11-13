@@ -21,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+        {/* <link href="./assets/css/style.css" rel="stylesheet" /> */}
       </Head>
       <body className={[rubik.className, "bg-app-cream"].join(" ")}>
         <NavBar />

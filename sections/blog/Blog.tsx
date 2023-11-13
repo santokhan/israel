@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-import BlogImage1 from '../../assets/images/blog/1.png'
 
 export function Post() {
     const flexData: Array<Record<string, string | any>> = [
@@ -67,6 +65,6 @@ export function Post() {
                     )}
                 </div>
             </div>
-        </div >
+        </div>
     );
 }

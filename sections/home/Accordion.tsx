@@ -66,7 +66,7 @@ export default function Accordion() {
                 <hr className="border-t border-app-black" />
                 <div className="">
                     {flexData.map((e, i) =>
-                        <AccordionItem title={e.title} desc={e.desc} />
+                        <AccordionItem title={e.title} desc={e.desc} key={i} />
                     )}
                 </div>
             </div>

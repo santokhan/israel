@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Feature() {
@@ -45,6 +44,6 @@ export default function Feature() {
                     )}
                 </div>
             </div>
-        </div >
+        </div>
     );
 }

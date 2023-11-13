@@ -1,7 +1,3 @@
-import Image from 'next/image'
-import Image1 from '../../assets/images/about/1.png'
-import Image2 from '../../assets/images/about/2.png'
-
 export function SectionA() {
     const text = {
         title: "המסע שלי",
@@ -31,7 +27,7 @@ export function SectionA() {
                 <div className="lg:col-span-7 space-y-4 order-2 lg:order-1">
                     <p className="text-app-black text-lg">{about[1].desc}</p>
                 </div>
-                <img src="/assets/images/about/2.png" className="lg:col-span-5 w-full lg:h-full object-contain order-1 lg:order-2" />
+                <img src="/assets/images/about/2.png" className="lg:col-span-5 w-full lg:h-full object-contain order-1 lg:order-2" alt="" />
             </div>
         </section>
     );
