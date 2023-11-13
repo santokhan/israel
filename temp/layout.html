@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" as="image" href="./assets/images/header/banner.png" />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/green-card/card-1.png"
+    />
+    <link rel="preload" as="image" href="./assets/images/home/portfolio.png" />
+    <link rel="preload" as="image" href="./assets/images/home/gallary/1.png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/script.js" async=""></script>
+    <title>Israel</title>
+    <meta name="description" content="Static App" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "vertical",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </head>
+  <body class="__className_98e1b5 bg-app-cream"></body>
+</html>
