@@ -7,10 +7,11 @@ window.addEventListener('load', function () {
         })
     })
 
-    // const accord = document.getElementById("accordion")
-    // accord.forEach((e) => {
-    //     e[0].addEventListener("click", function () {
-    //         e[1].style.display = "block";
-    //     })
-    // })
+    const accord = document.getElementById("accordion")
+
+    for (const item of accord.children) {
+        item.children[0]?.addEventListener("click", function () {
+            item.children[1]?.classList.toggle('hidden')
+        })
+    }
 })
